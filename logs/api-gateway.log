@@ -1,0 +1,995 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.library:api-gateway >-----------------------
+[INFO] Building API Gateway 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ api-gateway >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ api-gateway ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ api-gateway ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ api-gateway ---
+[INFO] skip non existing resourceDirectory C:\Users\2407076\OneDrive - Cognizant\Desktop\Library-Management-System-ms\api-gateway\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ api-gateway ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ api-gateway <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ api-gateway ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-07-03 18:37:41 - Starting ApiGatewayApplication using Java 21 with PID 6180 (C:\Users\2407076\OneDrive - Cognizant\Desktop\Library-Management-System-ms\api-gateway\target\classes started by 2407076 in C:\Users\2407076\OneDrive - Cognizant\Desktop\Library-Management-System-ms\api-gateway)
+2025-07-03 18:37:41 - No active profile set, falling back to 1 default profile: "default"
+2025-07-03 18:37:42 - BeanFactory id=939006ca-a6a3-35e7-9a70-dd07dd770d0d
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x0000017a313947b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-07-03 18:37:42 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-07-03 18:37:42 - Routes supplied from Gateway Properties: [RouteDefinition{id='book-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/books/**}}], filters=[], uri=lb://book-service, order=0, metadata={}}, RouteDefinition{id='member-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/members/**}}], filters=[], uri=lb://member-service, order=0, metadata={}}, RouteDefinition{id='transaction-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/transactions/**}}], filters=[], uri=lb://transaction-service, order=0, metadata={}}, RouteDefinition{id='fine-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/fines/**}}], filters=[], uri=lb://fine-service, order=0, metadata={}}, RouteDefinition{id='notification-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/notifications/**}}], filters=[], uri=lb://notification-service, order=0, metadata={}}]
+2025-07-03 18:37:42 - 
+
+Using generated security password: b18e95fb-5ca9-481f-ba34-4583e022ee1d
+
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [After]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Before]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Between]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Cookie]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Header]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Host]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Method]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Path]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Query]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [ReadBody]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [Weight]
+2025-07-03 18:37:43 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-03 18:37:43 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-07-03 18:37:43 - Eureka HTTP Client uses RestTemplate.
+2025-07-03 18:37:43 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-03 18:37:43 - Setting initial instance status as: STARTING
+2025-07-03 18:37:43 - Initializing Eureka in region us-east-1
+2025-07-03 18:37:43 - Resolving eureka endpoints via configuration
+2025-07-03 18:37:43 - Disable delta property : false
+2025-07-03 18:37:43 - Single vip registry refresh property : null
+2025-07-03 18:37:43 - Force full registry fetch : false
+2025-07-03 18:37:43 - Application is null : false
+2025-07-03 18:37:43 - Registered Applications size is zero : true
+2025-07-03 18:37:43 - Application version is -1: true
+2025-07-03 18:37:43 - Getting all instance registry info from the eureka server
+2025-07-03 18:37:44 - The response status is 200
+2025-07-03 18:37:44 - Starting heartbeat executor: renew interval is: 10
+2025-07-03 18:37:44 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-03 18:37:44 - Discovery Client initialized at timestamp 1751548064541 with initial instances count: 0
+2025-07-03 18:37:44 - Registering application API-GATEWAY with eureka with status UP
+2025-07-03 18:37:44 - Saw local status change event StatusChangeEvent [timestamp=1751548064545, current=UP, previous=STARTING]
+2025-07-03 18:37:44 - DiscoveryClient_API-GATEWAY/LTIN624333.cts.com:api-gateway:8080: registering service...
+2025-07-03 18:37:44 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:37:44 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: book-service
+2025-07-03 18:37:44 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:37:44 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: member-service
+2025-07-03 18:37:44 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:37:44 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: transaction-service
+2025-07-03 18:37:44 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:37:44 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: fine-service
+2025-07-03 18:37:44 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:37:44 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: notification-service
+2025-07-03 18:37:44 - New routes count: 5
+2025-07-03 18:37:44 - Netty started on port 8080
+2025-07-03 18:37:44 - Updating port to 8080
+2025-07-03 18:37:44 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:37:44 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: book-service
+2025-07-03 18:37:44 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:37:44 - DiscoveryClient_API-GATEWAY/LTIN624333.cts.com:api-gateway:8080 - registration status: 204
+2025-07-03 18:37:44 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: member-service
+2025-07-03 18:37:44 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:37:44 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: transaction-service
+2025-07-03 18:37:44 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:37:44 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: fine-service
+2025-07-03 18:37:44 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:37:44 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:37:44 - RouteDefinition matched: notification-service
+2025-07-03 18:37:44 - New routes count: 5
+2025-07-03 18:37:44 - Started ApiGatewayApplication in 3.929 seconds (process running for 4.373)
+2025-07-03 18:38:14 - Disable delta property : false
+2025-07-03 18:38:14 - Single vip registry refresh property : null
+2025-07-03 18:38:14 - Force full registry fetch : false
+2025-07-03 18:38:14 - Application is null : false
+2025-07-03 18:38:14 - Registered Applications size is zero : true
+2025-07-03 18:38:14 - Application version is -1: false
+2025-07-03 18:38:14 - Getting all instance registry info from the eureka server
+2025-07-03 18:38:14 - The response status is 200
+2025-07-03 18:38:14 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:38:14 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:14 - RouteDefinition matched: book-service
+2025-07-03 18:38:14 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:38:14 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:14 - RouteDefinition matched: member-service
+2025-07-03 18:38:14 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:38:14 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:14 - RouteDefinition matched: transaction-service
+2025-07-03 18:38:14 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:38:14 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:14 - RouteDefinition matched: fine-service
+2025-07-03 18:38:14 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:38:14 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:14 - RouteDefinition matched: notification-service
+2025-07-03 18:38:14 - New routes count: 5
+2025-07-03 18:38:44 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:38:44 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:44 - RouteDefinition matched: book-service
+2025-07-03 18:38:44 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:38:44 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:44 - RouteDefinition matched: member-service
+2025-07-03 18:38:44 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:38:44 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:44 - RouteDefinition matched: transaction-service
+2025-07-03 18:38:44 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:38:44 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:44 - RouteDefinition matched: fine-service
+2025-07-03 18:38:44 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:38:44 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:38:44 - RouteDefinition matched: notification-service
+2025-07-03 18:38:44 - New routes count: 5
+2025-07-03 18:39:14 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:39:14 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:14 - RouteDefinition matched: book-service
+2025-07-03 18:39:14 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:39:14 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:14 - RouteDefinition matched: member-service
+2025-07-03 18:39:14 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:39:14 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:14 - RouteDefinition matched: transaction-service
+2025-07-03 18:39:14 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:39:14 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:14 - RouteDefinition matched: fine-service
+2025-07-03 18:39:14 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:39:14 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:14 - RouteDefinition matched: notification-service
+2025-07-03 18:39:14 - New routes count: 5
+2025-07-03 18:39:44 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:39:44 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:44 - RouteDefinition matched: book-service
+2025-07-03 18:39:44 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:39:44 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:44 - RouteDefinition matched: member-service
+2025-07-03 18:39:44 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:39:44 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:44 - RouteDefinition matched: transaction-service
+2025-07-03 18:39:44 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:39:44 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:44 - RouteDefinition matched: fine-service
+2025-07-03 18:39:44 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:39:44 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:39:44 - RouteDefinition matched: notification-service
+2025-07-03 18:39:44 - New routes count: 5
+2025-07-03 18:40:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:40:05 - Request 'GET /actuator/health' doesn't match 'POST /logout'
+2025-07-03 18:40:05 - No matches found
+2025-07-03 18:40:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:40:05 - Checking match of request : '/actuator/health'; against '/actuator/**'
+2025-07-03 18:40:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:40:05 - Request 'GET /actuator/health' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:40:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:40:05 - Request 'GET /actuator/health' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:40:05 - matched
+2025-07-03 18:40:05 - Checking authorization on '/actuator/health' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:40:05 - Authorization successful
+2025-07-03 18:40:05 - No SecurityContext found in WebSession: 'org.springframework.web.server.session.InMemoryWebSessionStore$InMemoryWebSession@2f6f463c'
+2025-07-03 18:40:15 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:40:15 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:15 - RouteDefinition matched: book-service
+2025-07-03 18:40:15 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:40:15 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:15 - RouteDefinition matched: member-service
+2025-07-03 18:40:15 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:40:15 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:15 - RouteDefinition matched: transaction-service
+2025-07-03 18:40:15 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:40:15 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:15 - RouteDefinition matched: fine-service
+2025-07-03 18:40:15 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:40:15 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:15 - RouteDefinition matched: notification-service
+2025-07-03 18:40:15 - New routes count: 5
+2025-07-03 18:40:45 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:40:45 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:45 - RouteDefinition matched: book-service
+2025-07-03 18:40:45 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:40:45 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:45 - RouteDefinition matched: member-service
+2025-07-03 18:40:45 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:40:45 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:45 - RouteDefinition matched: transaction-service
+2025-07-03 18:40:45 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:40:45 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:45 - RouteDefinition matched: fine-service
+2025-07-03 18:40:45 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:40:45 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:40:45 - RouteDefinition matched: notification-service
+2025-07-03 18:40:45 - New routes count: 5
+2025-07-03 18:41:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:41:11 - Request 'GET /book-service/api/books/' doesn't match 'POST /logout'
+2025-07-03 18:41:11 - No matches found
+2025-07-03 18:41:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:41:11 - Request 'GET /book-service/api/books/' doesn't match 'null /actuator/**'
+2025-07-03 18:41:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:41:11 - Request 'GET /book-service/api/books/' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:41:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:41:11 - Request 'GET /book-service/api/books/' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:41:11 - No matches found
+2025-07-03 18:41:11 - Checking authorization on '/book-service/api/books/' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:41:11 - Authorization successful
+2025-07-03 18:41:15 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:41:15 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:15 - RouteDefinition matched: book-service
+2025-07-03 18:41:15 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:41:15 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:15 - RouteDefinition matched: member-service
+2025-07-03 18:41:15 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:41:15 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:15 - RouteDefinition matched: transaction-service
+2025-07-03 18:41:15 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:41:15 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:15 - RouteDefinition matched: fine-service
+2025-07-03 18:41:15 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:41:15 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:15 - RouteDefinition matched: notification-service
+2025-07-03 18:41:15 - New routes count: 5
+2025-07-03 18:41:45 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:41:45 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:45 - RouteDefinition matched: book-service
+2025-07-03 18:41:45 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:41:45 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:45 - RouteDefinition matched: member-service
+2025-07-03 18:41:45 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:41:45 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:45 - RouteDefinition matched: transaction-service
+2025-07-03 18:41:45 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:41:45 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:45 - RouteDefinition matched: fine-service
+2025-07-03 18:41:45 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:41:45 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:41:45 - RouteDefinition matched: notification-service
+2025-07-03 18:41:45 - New routes count: 5
+2025-07-03 18:42:15 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:42:15 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:15 - RouteDefinition matched: book-service
+2025-07-03 18:42:15 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:42:15 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:15 - RouteDefinition matched: member-service
+2025-07-03 18:42:15 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:42:15 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:15 - RouteDefinition matched: transaction-service
+2025-07-03 18:42:15 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:42:15 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:15 - RouteDefinition matched: fine-service
+2025-07-03 18:42:15 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:42:15 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:15 - RouteDefinition matched: notification-service
+2025-07-03 18:42:15 - New routes count: 5
+2025-07-03 18:42:43 - Resolving eureka endpoints via configuration
+2025-07-03 18:42:45 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:42:45 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:45 - RouteDefinition matched: book-service
+2025-07-03 18:42:45 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:42:45 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:45 - RouteDefinition matched: member-service
+2025-07-03 18:42:45 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:42:45 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:45 - RouteDefinition matched: transaction-service
+2025-07-03 18:42:45 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:42:45 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:45 - RouteDefinition matched: fine-service
+2025-07-03 18:42:45 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:42:45 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:42:45 - RouteDefinition matched: notification-service
+2025-07-03 18:42:45 - New routes count: 5
+2025-07-03 18:43:15 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:43:15 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:15 - RouteDefinition matched: book-service
+2025-07-03 18:43:15 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:43:15 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:15 - RouteDefinition matched: member-service
+2025-07-03 18:43:15 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:43:15 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:15 - RouteDefinition matched: transaction-service
+2025-07-03 18:43:15 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:43:16 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:16 - RouteDefinition matched: fine-service
+2025-07-03 18:43:16 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:43:16 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:16 - RouteDefinition matched: notification-service
+2025-07-03 18:43:16 - New routes count: 5
+2025-07-03 18:43:38 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:43:38 - Request 'GET /api/books/' doesn't match 'POST /logout'
+2025-07-03 18:43:38 - No matches found
+2025-07-03 18:43:38 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:43:38 - Request 'GET /api/books/' doesn't match 'null /actuator/**'
+2025-07-03 18:43:38 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:43:38 - Request 'GET /api/books/' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:43:38 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:43:38 - Request 'GET /api/books/' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:43:38 - No matches found
+2025-07-03 18:43:38 - Checking authorization on '/api/books/' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:43:38 - Authorization successful
+2025-07-03 18:43:38 - Route matched: book-service
+2025-07-03 18:43:38 - Mapping [Exchange: GET http://localhost:8080/api/books/] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:43:38 - [cadbce05-3] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:43:38 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:43:38 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:43:38 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:38 - RouteDefinition matched: book-service
+2025-07-03 18:43:38 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:43:38 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:38 - RouteDefinition matched: member-service
+2025-07-03 18:43:38 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:43:38 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:38 - RouteDefinition matched: transaction-service
+2025-07-03 18:43:38 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:43:38 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:38 - RouteDefinition matched: fine-service
+2025-07-03 18:43:38 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:43:38 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:38 - RouteDefinition matched: notification-service
+2025-07-03 18:43:38 - New routes count: 5
+2025-07-03 18:43:38 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64199"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:43:38 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0032503, duration(nanos)=3250300.0, startTimeNanos=73149271352700}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@58f945f2'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7403735} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64199"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:43:39 - Will instrument the response
+2025-07-03 18:43:39 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.3846428, duration(nanos)=3.846428E8, startTimeNanos=73149271352700}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@58f945f2'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7403735}
+2025-07-03 18:43:46 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:43:46 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:46 - RouteDefinition matched: book-service
+2025-07-03 18:43:46 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:43:46 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:46 - RouteDefinition matched: member-service
+2025-07-03 18:43:46 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:43:46 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:46 - RouteDefinition matched: transaction-service
+2025-07-03 18:43:46 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:43:46 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:46 - RouteDefinition matched: fine-service
+2025-07-03 18:43:46 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:43:46 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:43:46 - RouteDefinition matched: notification-service
+2025-07-03 18:43:46 - New routes count: 5
+2025-07-03 18:44:16 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:44:16 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:16 - RouteDefinition matched: book-service
+2025-07-03 18:44:16 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:44:16 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:16 - RouteDefinition matched: member-service
+2025-07-03 18:44:16 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:44:16 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:16 - RouteDefinition matched: transaction-service
+2025-07-03 18:44:16 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:44:16 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:16 - RouteDefinition matched: fine-service
+2025-07-03 18:44:16 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:44:16 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:16 - RouteDefinition matched: notification-service
+2025-07-03 18:44:16 - New routes count: 5
+2025-07-03 18:44:46 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:44:46 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:46 - RouteDefinition matched: book-service
+2025-07-03 18:44:46 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:44:46 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:46 - RouteDefinition matched: member-service
+2025-07-03 18:44:46 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:44:46 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:46 - RouteDefinition matched: transaction-service
+2025-07-03 18:44:46 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:44:46 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:46 - RouteDefinition matched: fine-service
+2025-07-03 18:44:46 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:44:46 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:44:46 - RouteDefinition matched: notification-service
+2025-07-03 18:44:46 - New routes count: 5
+2025-07-03 18:45:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:45:05 - Request 'GET /api/books/' doesn't match 'POST /logout'
+2025-07-03 18:45:05 - No matches found
+2025-07-03 18:45:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:45:05 - Request 'GET /api/books/' doesn't match 'null /actuator/**'
+2025-07-03 18:45:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:45:05 - Request 'GET /api/books/' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:45:05 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:45:05 - Request 'GET /api/books/' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:45:05 - No matches found
+2025-07-03 18:45:05 - Checking authorization on '/api/books/' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:45:05 - Authorization successful
+2025-07-03 18:45:05 - Route matched: book-service
+2025-07-03 18:45:05 - Mapping [Exchange: GET http://localhost:8080/api/books/] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:45:05 - [93133444-4] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:45:05 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:45:05 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64393"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:45:05 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.258E-4, duration(nanos)=125800.0, startTimeNanos=73236034052800}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@3a451c91'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@3e7a9f01} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64393"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:45:05 - Will instrument the response
+2025-07-03 18:45:05 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0188238, duration(nanos)=1.88238E7, startTimeNanos=73236034052800}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@3a451c91'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@3e7a9f01}
+2025-07-03 18:45:16 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:45:16 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:16 - RouteDefinition matched: book-service
+2025-07-03 18:45:16 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:45:16 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:16 - RouteDefinition matched: member-service
+2025-07-03 18:45:16 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:45:16 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:16 - RouteDefinition matched: transaction-service
+2025-07-03 18:45:16 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:45:16 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:16 - RouteDefinition matched: fine-service
+2025-07-03 18:45:16 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:45:16 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:16 - RouteDefinition matched: notification-service
+2025-07-03 18:45:16 - New routes count: 5
+2025-07-03 18:45:46 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:45:46 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:46 - RouteDefinition matched: book-service
+2025-07-03 18:45:46 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:45:46 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:46 - RouteDefinition matched: member-service
+2025-07-03 18:45:46 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:45:46 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:46 - RouteDefinition matched: transaction-service
+2025-07-03 18:45:46 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:45:46 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:46 - RouteDefinition matched: fine-service
+2025-07-03 18:45:46 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:45:46 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:45:46 - RouteDefinition matched: notification-service
+2025-07-03 18:45:46 - New routes count: 5
+2025-07-03 18:46:16 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:46:16 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:16 - RouteDefinition matched: book-service
+2025-07-03 18:46:16 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:46:16 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:16 - RouteDefinition matched: member-service
+2025-07-03 18:46:16 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:46:16 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:16 - RouteDefinition matched: transaction-service
+2025-07-03 18:46:16 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:46:16 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:16 - RouteDefinition matched: fine-service
+2025-07-03 18:46:16 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:46:16 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:16 - RouteDefinition matched: notification-service
+2025-07-03 18:46:16 - New routes count: 5
+2025-07-03 18:46:24 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:46:24 - Request 'GET /api/books/' doesn't match 'POST /logout'
+2025-07-03 18:46:24 - No matches found
+2025-07-03 18:46:24 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:46:24 - Request 'GET /api/books/' doesn't match 'null /actuator/**'
+2025-07-03 18:46:24 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:46:24 - Request 'GET /api/books/' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:46:24 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:46:24 - Request 'GET /api/books/' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:46:24 - No matches found
+2025-07-03 18:46:24 - Checking authorization on '/api/books/' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:46:24 - Authorization successful
+2025-07-03 18:46:24 - Route matched: book-service
+2025-07-03 18:46:24 - Mapping [Exchange: GET http://localhost:8080/api/books/] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:46:24 - [93133444-5] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:46:24 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:46:24 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64393"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:46:24 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.115E-4, duration(nanos)=111500.0, startTimeNanos=73314931533300}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@7fb4dc28'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7b8b4706} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64393"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:46:24 - Will instrument the response
+2025-07-03 18:46:24 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0089252, duration(nanos)=8925200.0, startTimeNanos=73314931533300}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@7fb4dc28'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7b8b4706}
+2025-07-03 18:46:30 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:46:30 - Request 'GET /api/books/' doesn't match 'POST /logout'
+2025-07-03 18:46:30 - No matches found
+2025-07-03 18:46:30 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:46:30 - Request 'GET /api/books/' doesn't match 'null /actuator/**'
+2025-07-03 18:46:30 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:46:30 - Request 'GET /api/books/' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:46:30 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:46:30 - Request 'GET /api/books/' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:46:30 - No matches found
+2025-07-03 18:46:30 - Checking authorization on '/api/books/' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:46:30 - Authorization successful
+2025-07-03 18:46:30 - Route matched: book-service
+2025-07-03 18:46:30 - Mapping [Exchange: GET http://localhost:8080/api/books/] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:46:30 - [93133444-6] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:46:30 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:46:30 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64393"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:46:30 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=8.49E-5, duration(nanos)=84900.0, startTimeNanos=73320972032700}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@1b947cac'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@155381ae} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64393"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:46:30 - Will instrument the response
+2025-07-03 18:46:30 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0080904, duration(nanos)=8090400.0, startTimeNanos=73320972032700}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@1b947cac'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@155381ae}
+2025-07-03 18:46:46 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:46:46 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:46 - RouteDefinition matched: book-service
+2025-07-03 18:46:46 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:46:46 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:46 - RouteDefinition matched: member-service
+2025-07-03 18:46:46 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:46:46 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:46 - RouteDefinition matched: transaction-service
+2025-07-03 18:46:46 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:46:46 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:46 - RouteDefinition matched: fine-service
+2025-07-03 18:46:46 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:46:46 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:46:46 - RouteDefinition matched: notification-service
+2025-07-03 18:46:46 - New routes count: 5
+2025-07-03 18:47:17 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:47:17 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:17 - RouteDefinition matched: book-service
+2025-07-03 18:47:17 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:47:17 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:17 - RouteDefinition matched: member-service
+2025-07-03 18:47:17 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:47:17 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:17 - RouteDefinition matched: transaction-service
+2025-07-03 18:47:17 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:47:17 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:17 - RouteDefinition matched: fine-service
+2025-07-03 18:47:17 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:47:17 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:17 - RouteDefinition matched: notification-service
+2025-07-03 18:47:17 - New routes count: 5
+2025-07-03 18:47:43 - Resolving eureka endpoints via configuration
+2025-07-03 18:47:47 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:47:47 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:47 - RouteDefinition matched: book-service
+2025-07-03 18:47:47 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:47:47 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:47 - RouteDefinition matched: member-service
+2025-07-03 18:47:47 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:47:47 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:47 - RouteDefinition matched: transaction-service
+2025-07-03 18:47:47 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:47:47 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:47 - RouteDefinition matched: fine-service
+2025-07-03 18:47:47 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:47:47 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:47:47 - RouteDefinition matched: notification-service
+2025-07-03 18:47:47 - New routes count: 5
+2025-07-03 18:48:08 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:48:08 - Request 'GET /api/books' doesn't match 'POST /logout'
+2025-07-03 18:48:08 - No matches found
+2025-07-03 18:48:08 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:48:08 - Request 'GET /api/books' doesn't match 'null /actuator/**'
+2025-07-03 18:48:08 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:48:08 - Request 'GET /api/books' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:48:08 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:48:08 - Request 'GET /api/books' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:48:08 - No matches found
+2025-07-03 18:48:08 - Checking authorization on '/api/books' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:48:08 - Authorization successful
+2025-07-03 18:48:08 - Route matched: book-service
+2025-07-03 18:48:08 - Mapping [Exchange: GET http://localhost:8080/api/books] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:48:08 - [4ec37e71-7] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:48:08 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:48:08 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:48:08 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.398E-4, duration(nanos)=139800.0, startTimeNanos=73418755667300}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@38401883'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@3c7f8b53} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:48:08 - Will instrument the response
+2025-07-03 18:48:08 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0158054, duration(nanos)=1.58054E7, startTimeNanos=73418755667300}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@38401883'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@3c7f8b53}
+2025-07-03 18:48:17 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:48:17 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:17 - RouteDefinition matched: book-service
+2025-07-03 18:48:17 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:48:17 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:17 - RouteDefinition matched: member-service
+2025-07-03 18:48:17 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:48:17 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:17 - RouteDefinition matched: transaction-service
+2025-07-03 18:48:17 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:48:17 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:17 - RouteDefinition matched: fine-service
+2025-07-03 18:48:17 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:48:17 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:17 - RouteDefinition matched: notification-service
+2025-07-03 18:48:17 - New routes count: 5
+2025-07-03 18:48:17 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:48:17 - Request 'GET /api/books/' doesn't match 'POST /logout'
+2025-07-03 18:48:17 - No matches found
+2025-07-03 18:48:17 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:48:17 - Request 'GET /api/books/' doesn't match 'null /actuator/**'
+2025-07-03 18:48:17 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:48:17 - Request 'GET /api/books/' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:48:17 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:48:17 - Request 'GET /api/books/' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:48:17 - No matches found
+2025-07-03 18:48:17 - Checking authorization on '/api/books/' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:48:17 - Authorization successful
+2025-07-03 18:48:17 - Route matched: book-service
+2025-07-03 18:48:17 - Mapping [Exchange: GET http://localhost:8080/api/books/] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:48:17 - [4ec37e71-8] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:48:17 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:48:17 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:48:17 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.071E-4, duration(nanos)=107100.0, startTimeNanos=73427924482700}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@ee6adc9'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@214265} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:48:17 - Will instrument the response
+2025-07-03 18:48:17 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0157829, duration(nanos)=1.57829E7, startTimeNanos=73427924482700}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@ee6adc9'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@214265}
+2025-07-03 18:48:23 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:48:23 - Request 'GET /api/books/1' doesn't match 'POST /logout'
+2025-07-03 18:48:23 - No matches found
+2025-07-03 18:48:23 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:48:23 - Request 'GET /api/books/1' doesn't match 'null /actuator/**'
+2025-07-03 18:48:23 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:48:23 - Request 'GET /api/books/1' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:48:23 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:48:23 - Request 'GET /api/books/1' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:48:23 - No matches found
+2025-07-03 18:48:23 - Checking authorization on '/api/books/1' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:48:23 - Authorization successful
+2025-07-03 18:48:23 - Route matched: book-service
+2025-07-03 18:48:23 - Mapping [Exchange: GET http://localhost:8080/api/books/1] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:48:23 - [4ec37e71-9] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:48:23 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:48:23 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:48:23 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=6.63E-5, duration(nanos)=66300.0, startTimeNanos=73434407656000}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@2174e972'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@3d251b5c} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:48:23 - Will instrument the response
+2025-07-03 18:48:23 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0514384, duration(nanos)=5.14384E7, startTimeNanos=73434407656000}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@2174e972'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@3d251b5c}
+2025-07-03 18:48:47 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:48:47 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:47 - RouteDefinition matched: book-service
+2025-07-03 18:48:47 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:48:47 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:47 - RouteDefinition matched: member-service
+2025-07-03 18:48:47 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:48:47 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:47 - RouteDefinition matched: transaction-service
+2025-07-03 18:48:47 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:48:47 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:47 - RouteDefinition matched: fine-service
+2025-07-03 18:48:47 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:48:47 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:48:47 - RouteDefinition matched: notification-service
+2025-07-03 18:48:47 - New routes count: 5
+2025-07-03 18:49:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:49:11 - Request 'GET /api/books/1' doesn't match 'POST /logout'
+2025-07-03 18:49:11 - No matches found
+2025-07-03 18:49:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:49:11 - Request 'GET /api/books/1' doesn't match 'null /actuator/**'
+2025-07-03 18:49:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:49:11 - Request 'GET /api/books/1' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:49:11 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:49:11 - Request 'GET /api/books/1' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:49:11 - No matches found
+2025-07-03 18:49:11 - Checking authorization on '/api/books/1' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:49:11 - Authorization successful
+2025-07-03 18:49:11 - Route matched: book-service
+2025-07-03 18:49:11 - Mapping [Exchange: GET http://localhost:8080/api/books/1] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:49:11 - [4b9674ba-10] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:49:11 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:49:11 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:49:12 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=2.953E-4, duration(nanos)=295300.0, startTimeNanos=73482627048400}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@d4baf55'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7f6d8581} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:49:12 - Will instrument the response
+2025-07-03 18:49:12 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0162252, duration(nanos)=1.62252E7, startTimeNanos=73482627048400}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@d4baf55'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7f6d8581}
+2025-07-03 18:49:14 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:49:14 - Request 'GET /api/books/1' doesn't match 'POST /logout'
+2025-07-03 18:49:14 - No matches found
+2025-07-03 18:49:14 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:49:14 - Request 'GET /api/books/1' doesn't match 'null /actuator/**'
+2025-07-03 18:49:14 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:49:14 - Request 'GET /api/books/1' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:49:14 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:49:14 - Request 'GET /api/books/1' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:49:14 - No matches found
+2025-07-03 18:49:14 - Checking authorization on '/api/books/1' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:49:14 - Authorization successful
+2025-07-03 18:49:14 - Route matched: book-service
+2025-07-03 18:49:14 - Mapping [Exchange: GET http://localhost:8080/api/books/1] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:49:14 - [4b9674ba-11] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:49:14 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:49:14 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:49:14 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=4.47E-5, duration(nanos)=44700.0, startTimeNanos=73485006546200}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@a5c67e2'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@49b98d9} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:49:14 - Will instrument the response
+2025-07-03 18:49:14 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0103927, duration(nanos)=1.03927E7, startTimeNanos=73485006546200}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@a5c67e2'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@49b98d9}
+2025-07-03 18:49:17 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:49:17 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:17 - RouteDefinition matched: book-service
+2025-07-03 18:49:17 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:49:17 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:17 - RouteDefinition matched: member-service
+2025-07-03 18:49:17 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:49:17 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:17 - RouteDefinition matched: transaction-service
+2025-07-03 18:49:17 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:49:17 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:17 - RouteDefinition matched: fine-service
+2025-07-03 18:49:17 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:49:17 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:17 - RouteDefinition matched: notification-service
+2025-07-03 18:49:17 - New routes count: 5
+2025-07-03 18:49:47 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:49:47 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:47 - RouteDefinition matched: book-service
+2025-07-03 18:49:47 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:49:47 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:47 - RouteDefinition matched: member-service
+2025-07-03 18:49:47 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:49:47 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:47 - RouteDefinition matched: transaction-service
+2025-07-03 18:49:47 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:49:47 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:47 - RouteDefinition matched: fine-service
+2025-07-03 18:49:47 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:49:47 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:49:47 - RouteDefinition matched: notification-service
+2025-07-03 18:49:47 - New routes count: 5
+2025-07-03 18:50:17 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:50:17 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:17 - RouteDefinition matched: book-service
+2025-07-03 18:50:17 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:50:17 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:17 - RouteDefinition matched: member-service
+2025-07-03 18:50:17 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:50:17 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:17 - RouteDefinition matched: transaction-service
+2025-07-03 18:50:17 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:50:17 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:17 - RouteDefinition matched: fine-service
+2025-07-03 18:50:17 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:50:17 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:17 - RouteDefinition matched: notification-service
+2025-07-03 18:50:17 - New routes count: 5
+2025-07-03 18:50:21 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:50:21 - Request 'GET /api/books/1' doesn't match 'POST /logout'
+2025-07-03 18:50:21 - No matches found
+2025-07-03 18:50:21 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:50:21 - Request 'GET /api/books/1' doesn't match 'null /actuator/**'
+2025-07-03 18:50:21 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:50:21 - Request 'GET /api/books/1' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:50:21 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:50:21 - Request 'GET /api/books/1' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:50:21 - No matches found
+2025-07-03 18:50:21 - Checking authorization on '/api/books/1' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:50:21 - Authorization successful
+2025-07-03 18:50:21 - Route matched: book-service
+2025-07-03 18:50:21 - Mapping [Exchange: GET http://localhost:8080/api/books/1] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:50:21 - [4b9674ba-12] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:50:21 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:50:21 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:50:21 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=3.394E-4, duration(nanos)=339400.0, startTimeNanos=73552518224500}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@7b7816aa'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@58fa44c8} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:50:21 - Will instrument the response
+2025-07-03 18:50:21 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/1'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0318441, duration(nanos)=3.18441E7, startTimeNanos=73552518224500}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@7b7816aa'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@58fa44c8}
+2025-07-03 18:50:47 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:50:47 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:47 - RouteDefinition matched: book-service
+2025-07-03 18:50:47 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:50:47 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:47 - RouteDefinition matched: member-service
+2025-07-03 18:50:47 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:50:47 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:47 - RouteDefinition matched: transaction-service
+2025-07-03 18:50:47 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:50:47 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:47 - RouteDefinition matched: fine-service
+2025-07-03 18:50:47 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:50:47 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:50:47 - RouteDefinition matched: notification-service
+2025-07-03 18:50:47 - New routes count: 5
+2025-07-03 18:51:17 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:51:17 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:17 - RouteDefinition matched: book-service
+2025-07-03 18:51:17 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:51:17 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:17 - RouteDefinition matched: member-service
+2025-07-03 18:51:17 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:51:17 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:17 - RouteDefinition matched: transaction-service
+2025-07-03 18:51:17 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:51:17 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:17 - RouteDefinition matched: fine-service
+2025-07-03 18:51:17 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:51:17 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:17 - RouteDefinition matched: notification-service
+2025-07-03 18:51:17 - New routes count: 5
+2025-07-03 18:51:48 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:51:48 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:48 - RouteDefinition matched: book-service
+2025-07-03 18:51:48 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:51:48 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:48 - RouteDefinition matched: member-service
+2025-07-03 18:51:48 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:51:48 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:48 - RouteDefinition matched: transaction-service
+2025-07-03 18:51:48 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:51:48 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:48 - RouteDefinition matched: fine-service
+2025-07-03 18:51:48 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:51:48 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:51:48 - RouteDefinition matched: notification-service
+2025-07-03 18:51:48 - New routes count: 5
+2025-07-03 18:51:51 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:51:51 - Request 'GET /api/books' doesn't match 'POST /logout'
+2025-07-03 18:51:51 - No matches found
+2025-07-03 18:51:51 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:51:51 - Request 'GET /api/books' doesn't match 'null /actuator/**'
+2025-07-03 18:51:51 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:51:51 - Request 'GET /api/books' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:51:51 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:51:51 - Request 'GET /api/books' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:51:51 - No matches found
+2025-07-03 18:51:51 - Checking authorization on '/api/books' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:51:51 - Authorization successful
+2025-07-03 18:51:51 - Route matched: book-service
+2025-07-03 18:51:51 - Mapping [Exchange: GET http://localhost:8080/api/books] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:51:51 - [4ec37e71-13] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:51:51 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:51:51 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:51:51 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=5.172E-4, duration(nanos)=517200.0, startTimeNanos=73642062762200}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@3e89d613'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@56714d28} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:64835"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:51:51 - Will instrument the response
+2025-07-03 18:51:51 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0151803, duration(nanos)=1.51803E7, startTimeNanos=73642062762200}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@3e89d613'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@56714d28}
+2025-07-03 18:52:07 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:52:07 - Request 'GET /api/books/' doesn't match 'POST /logout'
+2025-07-03 18:52:07 - No matches found
+2025-07-03 18:52:07 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:52:07 - Request 'GET /api/books/' doesn't match 'null /actuator/**'
+2025-07-03 18:52:07 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:52:07 - Request 'GET /api/books/' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:52:07 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:52:07 - Request 'GET /api/books/' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:52:07 - No matches found
+2025-07-03 18:52:07 - Checking authorization on '/api/books/' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:52:07 - Authorization successful
+2025-07-03 18:52:07 - Route matched: book-service
+2025-07-03 18:52:07 - Mapping [Exchange: GET http://localhost:8080/api/books/] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:52:07 - [4b9674ba-14] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:52:07 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:52:07 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:52:07 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=2.471E-4, duration(nanos)=247100.0, startTimeNanos=73658575762500}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@116c17dc'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@546e8b95} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:52:07 - Will instrument the response
+2025-07-03 18:52:07 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0114278, duration(nanos)=1.14278E7, startTimeNanos=73658575762500}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@116c17dc'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@546e8b95}
+2025-07-03 18:52:18 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:52:18 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:18 - RouteDefinition matched: book-service
+2025-07-03 18:52:18 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:52:18 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:18 - RouteDefinition matched: member-service
+2025-07-03 18:52:18 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:52:18 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:18 - RouteDefinition matched: transaction-service
+2025-07-03 18:52:18 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:52:18 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:18 - RouteDefinition matched: fine-service
+2025-07-03 18:52:18 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:52:18 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:18 - RouteDefinition matched: notification-service
+2025-07-03 18:52:18 - New routes count: 5
+2025-07-03 18:52:28 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:52:28 - Request 'GET /api/books' doesn't match 'POST /logout'
+2025-07-03 18:52:28 - No matches found
+2025-07-03 18:52:28 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:52:28 - Request 'GET /api/books' doesn't match 'null /actuator/**'
+2025-07-03 18:52:28 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:52:28 - Request 'GET /api/books' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:52:28 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:52:28 - Request 'GET /api/books' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:52:28 - No matches found
+2025-07-03 18:52:28 - Checking authorization on '/api/books' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:52:28 - Authorization successful
+2025-07-03 18:52:28 - Route matched: book-service
+2025-07-03 18:52:28 - Mapping [Exchange: GET http://localhost:8080/api/books] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:52:28 - [4b9674ba-15] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:52:28 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:52:28 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:52:28 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=4.9E-5, duration(nanos)=49000.0, startTimeNanos=73679288351300}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@797d12b8'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@70f2734c} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:52:28 - Will instrument the response
+2025-07-03 18:52:28 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0073951, duration(nanos)=7395100.0, startTimeNanos=73679288351300}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@797d12b8'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@70f2734c}
+2025-07-03 18:52:43 - Resolving eureka endpoints via configuration
+2025-07-03 18:52:48 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:52:48 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:48 - RouteDefinition matched: book-service
+2025-07-03 18:52:48 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:52:48 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:48 - RouteDefinition matched: member-service
+2025-07-03 18:52:48 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:52:48 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:48 - RouteDefinition matched: transaction-service
+2025-07-03 18:52:48 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:52:48 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:48 - RouteDefinition matched: fine-service
+2025-07-03 18:52:48 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:52:48 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:52:48 - RouteDefinition matched: notification-service
+2025-07-03 18:52:48 - New routes count: 5
+2025-07-03 18:53:18 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:53:18 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:18 - RouteDefinition matched: book-service
+2025-07-03 18:53:18 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:53:18 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:18 - RouteDefinition matched: member-service
+2025-07-03 18:53:18 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:53:18 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:18 - RouteDefinition matched: transaction-service
+2025-07-03 18:53:18 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:53:18 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:18 - RouteDefinition matched: fine-service
+2025-07-03 18:53:18 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:53:18 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:18 - RouteDefinition matched: notification-service
+2025-07-03 18:53:18 - New routes count: 5
+2025-07-03 18:53:26 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2025-07-03 18:53:26 - Request 'GET /api/books' doesn't match 'POST /logout'
+2025-07-03 18:53:26 - No matches found
+2025-07-03 18:53:26 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/**', method=null}
+2025-07-03 18:53:26 - Request 'GET /api/books' doesn't match 'null /actuator/**'
+2025-07-03 18:53:26 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2025-07-03 18:53:26 - Request 'GET /api/books' doesn't match 'null /swagger-ui/**'
+2025-07-03 18:53:26 - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2025-07-03 18:53:26 - Request 'GET /api/books' doesn't match 'null /v3/api-docs/**'
+2025-07-03 18:53:26 - No matches found
+2025-07-03 18:53:26 - Checking authorization on '/api/books' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda/0x0000017a3151e890@45b4302a
+2025-07-03 18:53:26 - Authorization successful
+2025-07-03 18:53:26 - Route matched: book-service
+2025-07-03 18:53:26 - Mapping [Exchange: GET http://localhost:8080/api/books] to Route{id='book-service', uri=lb://book-service, order=0, predicate=Paths: [/api/books/**], match trailing slash: true, gatewayFilters=[[[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1]], metadata={}}
+2025-07-03 18:53:26 - [4b9674ba-16] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@539823a
+2025-07-03 18:53:26 - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@606b53a3}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@1f0e2bdc}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@7d6c4079}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@284d4885}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@a69f9d}, order = 0], [[DedupeResponseHeader Access-Control-Allow-Credentials Access-Control-Allow-Origin = RETAIN_FIRST], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@432c0f1}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@55e91e61}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@166e5a6d}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@1201e064}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1d55dd21}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@37bda983}, order = 2147483647]]
+2025-07-03 18:53:26 - Will instrument the HTTP request headers [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:53:26 - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.169E-4, duration(nanos)=116900.0, startTimeNanos=73736798569900}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@411c485e'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7a2f2d51} created for the request. New headers are [Host:"localhost:8080", sec-ch-ua-platform:""Windows"", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0", Accept:"application/json, text/plain, */*", sec-ch-ua:""Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"", sec-ch-ua-mobile:"?0", Origin:"http://localhost:5173", Sec-Fetch-Site:"same-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:5173/", Accept-Encoding:"gzip, deflate, br, zstd", Accept-Language:"en-US,en;q=0.9,en-IN;q=0.8", Forwarded:"proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:65030"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+2025-07-03 18:53:26 - Will instrument the response
+2025-07-03 18:53:26 - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='book-service', spring.cloud.gateway.route.uri='lb://book-service'], highCardinalityKeyValues=[http.uri='http://localhost:8080/api/books'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0123389, duration(nanos)=1.23389E7, startTimeNanos=73736798569900}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@411c485e'], parentObservation=org.springframework.security.web.server.ObservationWebFilterChainDecorator$PhasedObservation@7a2f2d51}
+2025-07-03 18:53:48 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:53:48 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:48 - RouteDefinition matched: book-service
+2025-07-03 18:53:48 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:53:48 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:48 - RouteDefinition matched: member-service
+2025-07-03 18:53:48 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:53:48 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:48 - RouteDefinition matched: transaction-service
+2025-07-03 18:53:48 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:53:48 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:48 - RouteDefinition matched: fine-service
+2025-07-03 18:53:48 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:53:48 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:53:48 - RouteDefinition matched: notification-service
+2025-07-03 18:53:48 - New routes count: 5
+2025-07-03 18:54:18 - RouteDefinition book-service applying {_genkey_0=/api/books/**} to Path
+2025-07-03 18:54:18 - RouteDefinition book-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:54:18 - RouteDefinition matched: book-service
+2025-07-03 18:54:18 - RouteDefinition member-service applying {_genkey_0=/api/members/**} to Path
+2025-07-03 18:54:18 - RouteDefinition member-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:54:18 - RouteDefinition matched: member-service
+2025-07-03 18:54:18 - RouteDefinition transaction-service applying {_genkey_0=/api/transactions/**} to Path
+2025-07-03 18:54:18 - RouteDefinition transaction-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:54:18 - RouteDefinition matched: transaction-service
+2025-07-03 18:54:18 - RouteDefinition fine-service applying {_genkey_0=/api/fines/**} to Path
+2025-07-03 18:54:18 - RouteDefinition fine-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:54:18 - RouteDefinition matched: fine-service
+2025-07-03 18:54:18 - RouteDefinition notification-service applying {_genkey_0=/api/notifications/**} to Path
+2025-07-03 18:54:18 - RouteDefinition notification-service applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin} to DedupeResponseHeader
+2025-07-03 18:54:18 - RouteDefinition matched: notification-service
+2025-07-03 18:54:18 - New routes count: 5
