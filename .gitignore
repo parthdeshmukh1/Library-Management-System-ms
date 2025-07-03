@@ -1,0 +1,53 @@
+# Java & Maven
+/target/
+**/target/
+*.log
+logs/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment & config
+*.env
+*.local
+
+# Database
+*.h2.db
+*.mv.db
+
+# Build output
+/build/
+**/build/
+
+# Node (if any frontend)
+node_modules/
+
+# Misc
+*.swp
+*.swo
+
+# Ignore generated docs
+*.docset
+
+# Ignore test reports
+**/test-output/
+**/surefire-reports/
+
+# Ignore backup files
+*~
+
+# Ignore scripts output
+scripts/*.log
