@@ -51,3 +51,4 @@ node_modules/
 
 # Ignore scripts output
 scripts/*.log
+logs/eureka-server.log
