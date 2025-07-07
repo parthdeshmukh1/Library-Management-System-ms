@@ -1,6 +1,7 @@
 package com.library.fine.controller;
 
 import com.library.fine.dto.FineDTO;
+import com.library.fine.dto.FineResponseDTO;
 import com.library.fine.service.FineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,28 +21,25 @@ public class FineController {
     private FineService fineService;
 
     @GetMapping
-    public ResponseEntity<List<FineDTO>> getAllFines() {
-        List<FineDTO> fines = fineService.getAllFines();
-        return ResponseEntity.ok(fines);
+    public ResponseEntity<List<FineResponseDTO>> getAllFines() {
+        return ResponseEntity.ok(fineService.getAllFines());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<FineDTO> getFineById(@PathVariable Long id) {
+    public ResponseEntity<FineResponseDTO> getFineById(@PathVariable Long id) {
         return fineService.getFineById(id)
-                .map(fine -> ResponseEntity.ok(fine))
+                .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/member/{memberId}")
-    public ResponseEntity<List<FineDTO>> getFinesByMemberId(@PathVariable Long memberId) {
-        List<FineDTO> fines = fineService.getFinesByMemberId(memberId);
-        return ResponseEntity.ok(fines);
+    public ResponseEntity<List<FineResponseDTO>> getFinesByMemberId(@PathVariable Long memberId) {
+        return ResponseEntity.ok(fineService.getFinesByMemberId(memberId));
     }
 
     @GetMapping("/pending")
-    public ResponseEntity<List<FineDTO>> getPendingFines() {
-        List<FineDTO> fines = fineService.getPendingFines();
-        return ResponseEntity.ok(fines);
+    public ResponseEntity<List<FineResponseDTO>> getPendingFines() {
+        return ResponseEntity.ok(fineService.getPendingFines());
     }
 
     @GetMapping("/member/{memberId}/total")
@@ -50,14 +48,10 @@ public class FineController {
         return ResponseEntity.ok(Map.of("totalPendingFines", total));
     }
 
-    @PostMapping
-    public ResponseEntity<?> createFine(@RequestBody Map<String, Object> request) {
+    @PostMapping("/{transactionId}")
+    public ResponseEntity<?> createFine(@PathVariable Long transactionId) {
         try {
-            Long memberId = Long.valueOf(request.get("memberId").toString());
-            Long transactionId = Long.valueOf(request.get("transactionId").toString());
-            Integer overdueDays = Integer.valueOf(request.get("overdueDays").toString());
-            
-            FineDTO createdFine = fineService.createFine(memberId, transactionId, overdueDays);
+            FineResponseDTO createdFine = fineService.createFine(transactionId);
             return ResponseEntity.status(HttpStatus.CREATED).body(createdFine);
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
@@ -68,10 +62,19 @@ public class FineController {
     public ResponseEntity<?> payFine(@PathVariable Long id) {
         try {
             return fineService.payFine(id)
-                    .map(fine -> ResponseEntity.ok(fine))
+                    .map(ResponseEntity::ok)
                     .orElse(ResponseEntity.notFound().build());
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        }
+    }
+
+    @PutMapping("/update-fines")
+    public ResponseEntity<String> updateFines() {
+        try {
+            return ResponseEntity.ok(fineService.processOverdueFines());
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()).toString());
         }
     }
 
