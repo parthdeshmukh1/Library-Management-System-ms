@@ -1,7 +1,7 @@
 package com.library.fine.controller;
 
-import com.library.fine.dto.FineDTO;
 import com.library.fine.dto.FineResponseDTO;
+import com.library.fine.entity.Fine.FineType;
 import com.library.fine.service.FineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -48,10 +48,10 @@ public class FineController {
         return ResponseEntity.ok(Map.of("totalPendingFines", total));
     }
 
-    @PostMapping("/{transactionId}")
-    public ResponseEntity<?> createFine(@PathVariable Long transactionId) {
+    @PostMapping("/{transactionId}/{fineType}")
+    public ResponseEntity<?> createFine(@PathVariable Long transactionId, @PathVariable FineType fineType) {
         try {
-            FineResponseDTO createdFine = fineService.createFine(transactionId);
+            FineResponseDTO createdFine = fineService.createFine(transactionId, fineType);
             return ResponseEntity.status(HttpStatus.CREATED).body(createdFine);
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
@@ -62,6 +62,28 @@ public class FineController {
     public ResponseEntity<?> payFine(@PathVariable Long id) {
         try {
             return fineService.payFine(id)
+                    .map(ResponseEntity::ok)
+                    .orElse(ResponseEntity.notFound().build());
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        }
+    }
+
+    @PutMapping("/{id}/reverse")
+    public ResponseEntity<?> reverseFinePayment(@PathVariable Long id) {
+        try {
+            return fineService.reverseFinePayment(id)
+                    .map(ResponseEntity::ok)
+                    .orElse(ResponseEntity.notFound().build());
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        }
+    }
+
+    @PutMapping("/{id}/cancel")
+    public ResponseEntity<?> cancelFine(@PathVariable Long id) {
+        try {
+            return fineService.cancelFine(id)
                     .map(ResponseEntity::ok)
                     .orElse(ResponseEntity.notFound().build());
         } catch (RuntimeException e) {
