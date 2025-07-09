@@ -25,6 +25,16 @@ public class FineController {
         return ResponseEntity.ok(fineService.getAllFines());
     }
 
+    @GetMapping("/collected")
+    public ResponseEntity<BigDecimal> getTotalCollectedFines() {
+        return ResponseEntity.ok(fineService.getTotalCollectedFines());
+    }
+
+    @GetMapping("/pending")
+    public ResponseEntity<BigDecimal> getTotalPendingFines() {
+        return ResponseEntity.ok(fineService.getTotalPendingFines());
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<FineResponseDTO> getFineById(@PathVariable Long id) {
         return fineService.getFineById(id)
@@ -37,11 +47,6 @@ public class FineController {
         return ResponseEntity.ok(fineService.getFinesByMemberId(memberId));
     }
 
-    @GetMapping("/pending")
-    public ResponseEntity<List<FineResponseDTO>> getPendingFines() {
-        return ResponseEntity.ok(fineService.getPendingFines());
-    }
-
     @GetMapping("/member/{memberId}/total")
     public ResponseEntity<Map<String, BigDecimal>> getTotalPendingFinesByMember(@PathVariable Long memberId) {
         BigDecimal total = fineService.getTotalPendingFinesByMember(memberId);
@@ -49,13 +54,12 @@ public class FineController {
     }
 
     @PostMapping("/{transactionId}/{fineType}")
-    public ResponseEntity<?> createFine(@PathVariable Long transactionId, @PathVariable FineType fineType) {
-        try {
-            FineResponseDTO createdFine = fineService.createFine(transactionId, fineType);
-            return ResponseEntity.status(HttpStatus.CREATED).body(createdFine);
-        } catch (RuntimeException e) {
-            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
-        }
+    public ResponseEntity<FineResponseDTO> createFine(
+            @PathVariable Long transactionId,
+            @PathVariable FineType fineType,
+            @RequestParam(required = false) BigDecimal amount) {
+        FineResponseDTO fine = fineService.createFine(transactionId, fineType, amount);
+        return ResponseEntity.ok(fine);
     }
 
     @PutMapping("/{id}/pay")

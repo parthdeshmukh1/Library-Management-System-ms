@@ -62,42 +62,64 @@ public class FineService {
                 .collect(Collectors.toList());
     }
 
-    public List<FineResponseDTO> getPendingFines() {
-        return fineRepository.findByStatus(Fine.FineStatus.PENDING).stream()
-                .map(fine -> {
-                    BorrowingTransactionResponseDTO transaction = transactionServiceClient
-                            .getTransactionById(fine.getTransactionId());
-                    return new FineResponseDTO(convertToDTO(fine), transaction);
-                })
-                .collect(Collectors.toList());
+    public BigDecimal getTotalPendingFines() {
+        return fineRepository.getTotalPendingFines();
+    }
+
+    public BigDecimal getTotalCollectedFines() {
+        return fineRepository.getTotalCollectedFines();
     }
 
     public BigDecimal getTotalPendingFinesByMember(Long memberId) {
         return fineRepository.getTotalPendingFinesByMember(memberId);
     }
 
-    public FineResponseDTO createFine(Long transactionId, FineType fineType) {
-        // Fetch transaction details using Feign Client
+    public FineResponseDTO createFine(Long transactionId, FineType fineType, BigDecimal amount) {
+        // 1. Fetch transaction details using Feign Client
         BorrowingTransactionResponseDTO transaction = transactionServiceClient.getTransactionById(transactionId);
 
-        // Check if fine already exists for this transaction
-        if (fineRepository.existsByTransactionIdAndFineType(transactionId, fineType)) {
-            throw new RuntimeException(
-                    "Fine already exists for this transaction having ID: " + transactionId + " and TYPE: " + fineType);
-        }
-
-        // Calculate overdue days
-        LocalDate overdueDate = transaction.getDueDate();
-        LocalDate currentDate = LocalDate.now();
-        int overdueDays = (int) ChronoUnit.DAYS.between(overdueDate, currentDate);
-
-        // Get member ID from transaction
+        // 2. Get member ID from transaction
         Long memberId = transaction.getMember().getMemberId();
 
-        // Calculate fine amount
-        BigDecimal amount = DAILY_FINE_RATE.multiply(new BigDecimal(overdueDays));
-        Fine fine = new Fine(memberId, transactionId, amount, fineType);
-        Fine savedFine = fineRepository.save(fine);
+        // 3. Calculate overdue days (only for LATE_RETURN)
+        LocalDate dueDate = transaction.getDueDate();
+        LocalDate currentDate = LocalDate.now();
+        int overdueDays = (int) ChronoUnit.DAYS.between(dueDate, currentDate);
+
+        // 4. Check if fine already exists for this transaction and type
+        Optional<Fine> existingFineOpt = fineRepository.findByTransactionIdAndFineType(transactionId, fineType);
+
+        if (existingFineOpt.isPresent()) {
+            Fine existingFine = existingFineOpt.get();
+
+            // 👉 Check if the existing fine is CANCELLED — allow new fine creation
+            if (existingFine.getStatus() != Fine.FineStatus.CANCELLED) {
+                if (fineType == FineType.LATE_RETURN) {
+                    // ✅ Update amount for LATE_RETURN fine
+                    BigDecimal updatedAmount = (amount != null)
+                            ? amount
+                            : DAILY_FINE_RATE.multiply(BigDecimal.valueOf(Math.max(overdueDays, 0)));
+
+                    existingFine.setAmount(updatedAmount);
+                    Fine updatedFine = fineRepository.save(existingFine);
+                    return new FineResponseDTO(convertToDTO(updatedFine), transaction);
+                } else {
+                    // ❌ Throw error for duplicate non-LATE_RETURN fines
+                    throw new RuntimeException(
+                            "Fine already exists for transaction ID: " + transactionId + " and TYPE: " + fineType);
+                }
+            }
+            // ✅ If CANCELLED, allow new fine to be created below
+        }
+
+        // 5. Calculate amount for new fine
+        BigDecimal finalAmount = (amount != null)
+                ? amount
+                : DAILY_FINE_RATE.multiply(BigDecimal.valueOf(Math.max(overdueDays, 0)));
+
+        // 6. Create and save new fine
+        Fine newFine = new Fine(memberId, transactionId, finalAmount, fineType);
+        Fine savedFine = fineRepository.save(newFine);
 
         return new FineResponseDTO(convertToDTO(savedFine), transaction);
     }
@@ -137,7 +159,7 @@ public class FineService {
         allTransactions.forEach(transaction -> {
             try {
                 if (transaction.getStatus().equals("OVERDUE")) {
-                    createFine(transaction.getTransactionId(), FineType.LATE_RETURN);
+                    createFine(transaction.getTransactionId(), FineType.LATE_RETURN, null);
                 }
             } catch (RuntimeException e) {
                 System.err.println("Failed to create fine for transaction ID " + transaction.getTransactionId() + ": "

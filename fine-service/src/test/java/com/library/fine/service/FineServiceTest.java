@@ -64,7 +64,7 @@ class FineServiceTest {
 
     @Test
     void testCreateFine_Success() {
-        when(fineRepository.existsByTransactionIdAndFineType(100L, FineType.LATE_RETURN)).thenReturn(false);
+        when(fineRepository.existsByTransactionId(100L)).thenReturn(false);
 
         Fine fine = new Fine();
         fine.setFineId(10L);
@@ -89,7 +89,7 @@ class FineServiceTest {
 
         when(fineRepository.save(any(Fine.class))).thenReturn(fine);
 
-        FineResponseDTO result = fineService.createFine(100L, FineType.DAMAGED_ITEM);
+        FineResponseDTO result = fineService.createFine(100L, FineType.DAMAGED_ITEM, null);
 
         assertNotNull(result);
         assertEquals(new BigDecimal("2.00"), result.getFineDTO().getAmount());
@@ -97,7 +97,7 @@ class FineServiceTest {
 
     @Test
     void testCreateFine_Duplicate() {
-        when(fineRepository.existsByTransactionIdAndFineType(100L, FineType.LATE_RETURN)).thenReturn(true);
-        assertThrows(RuntimeException.class, () -> fineService.createFine(100L, FineType.DAMAGED_ITEM));
+        when(fineRepository.existsByTransactionId(100L)).thenReturn(true);
+        assertThrows(RuntimeException.class, () -> fineService.createFine(100L, FineType.DAMAGED_ITEM , null));
     }
 }
