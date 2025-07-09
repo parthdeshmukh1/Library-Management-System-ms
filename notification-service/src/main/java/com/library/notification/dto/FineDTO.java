@@ -1,12 +1,8 @@
-package com.library.fine.dto;
-
+package com.library.notification.dto;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-
-import com.library.fine.entity.Fine.FineStatus;
-import com.library.fine.entity.Fine.FineType;
 
 public class FineDTO {
     private Long fineId;
@@ -101,11 +97,11 @@ public class FineDTO {
         this.fineType = fineType;
     }
 
-    // public enum FineStatus {
-    //     PENDING, PAID, CANCELLED
-    // }
+    public enum FineStatus {
+        PENDING, PAID, CANCELLED
+    }
 
-    // public enum FineType {
-    //     LATE_RETURN, LOST_ITEM, DAMAGED_ITEM
-    // }
+    public enum FineType {
+        LATE_RETURN, LOST_ITEM, DAMAGED_ITEM
+    }
 }
